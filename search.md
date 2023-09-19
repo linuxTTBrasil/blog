@@ -3,6 +3,7 @@ layout: default
 title: Search
 ---
 
+
 ## Resultado
 <div id="wrapper">
     <div   class="posts filter" id="main"/>
