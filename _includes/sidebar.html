@@ -1,0 +1,133 @@
+<script>
+  function searchHandler(e){
+    var search = document.getElementById("search-input").value;
+    var url = "{{site.url}}" + "/search?query=" + search;
+    console.info(url,"url")
+    window.location.href = url;
+  }
+</script>
+<div class="sidebar">
+  <div class="sidebar-sticky">
+    <div class="search">
+      <input type="text" class="form-control" id="search-input" placeholder="Nome do post">
+      <button onclick="searchHandler()" type="button" id="search-button" class="btn btn-light">buscar</button>
+    </div>
+    <div class="sidebar-about">
+        <a href="{{ site.url }}">
+          <img src="/assets/images/LTT.png"/>
+        </a>
+
+        <span class="sidebar-slogan">{{site.slogan}}</span>
+    </div>
+
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="{{ site.url }}">Home</a>
+
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
+
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      <!--     
+      <a class="sidebar-nav-item" onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.getElementsByClassName('post')[0].outerHTML)" download="page.html" href="#">Download</a>
+      -->
+      <a class="sidebar-nav-item" href="{{ site.author.github }}">GitHub</a>
+    </nav>
+    <div class="night-mode-div">
+    <div>
+        <img id="night-mode" src="/assets/images/moon.svg"></img>
+    </div>
+        <b class="copyright">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</b>
+    </div>
+    <div class="version">
+            {{site.version}}
+    </div>
+    
+    <script>
+      function addNightModeUnderDevelopmentMessage(){
+          
+            let divUnderDevelopmentMessage = document.createElement("div")
+            divUnderDevelopmentMessage.id = "under-development-message"
+            divUnderDevelopmentMessage.innerHTML = "Dark mode under development"
+            divUnderDevelopmentMessage.style.position = "fixed"
+            divUnderDevelopmentMessage.style.top = "0"
+            divUnderDevelopmentMessage.style.right = "0"
+            divUnderDevelopmentMessage.style.color = "white"
+            divUnderDevelopmentMessage.style.padding = "10px"
+            divUnderDevelopmentMessage.style.backgroundColor = "#32325b"
+            divUnderDevelopmentMessage.style.borderRadius = "0 0 10px 10px"
+            divUnderDevelopmentMessage.style.opacity = "0.6"
+            document.body.appendChild(divUnderDevelopmentMessage)
+      }
+      function chooseThemeOnClick(){
+        let nightMode = document.getElementById("night-mode");
+        var theme = localStorage.getItem('theme');
+      
+        if(theme === null){
+          theme = 'night';
+          localStorage.setItem("theme","night");
+        }
+        var body = document.getElementsByTagName("body")[0];
+        var h1 = document.getElementsByTagName("h1")[0];
+        if (theme === "light") {
+            document.documentElement.style.setProperty("--title","rgba(255,255,255,0.9");
+            document.documentElement.style.setProperty("--content","rgba(255,255,255,0.75");
+            body.style.backgroundColor = "#202020"
+            nightMode.src = "/assets/images/sun.svg";
+            localStorage.setItem('theme', 'night');
+            addNightModeUnderDevelopmentMessage()
+
+          } else {
+            document.getElementById("under-development-message")?.remove()
+            document.documentElement.style.setProperty("--title","#303030")
+            document.documentElement.style.setProperty("--content","#404040");
+            body.style.backgroundColor = "aliceblue"
+            localStorage.setItem("theme", 'light');
+            nightMode.src = "/assets/images/moon.svg";
+          }
+      }
+      function chooseTheme(){
+        var body = document.getElementsByTagName("body")[0];
+        var h1 = document.getElementsByTagName("h1")[0];
+        let nightMode = document.getElementById("night-mode");
+        var theme = localStorage.getItem('theme');
+      
+        if(theme === null){
+          theme = 'night';
+          localStorage.setItem("theme","night");
+        }
+        if (theme === "night") {
+            document.documentElement.style.setProperty("--title","rgba(255,255,255,0.9");
+            document.documentElement.style.setProperty("--content","rgba(255,255,255,0.75");
+            body.style.backgroundColor = "#202020"
+            nightMode.src = "/assets/images/sun.svg";
+            localStorage.setItem('theme', 'night');
+            addNightModeUnderDevelopmentMessage()
+          } else {
+            document.documentElement.style.setProperty("--title","#303030")
+            document.documentElement.style.setProperty("--content","#404040");
+            body.style.backgroundColor = "aliceblue"
+
+            localStorage.setItem("theme", 'light');
+            nightMode.src = "/assets/images/moon.svg";
+          }
+      }
+      chooseTheme()
+            
+
+      var nightMode = document.getElementById("night-mode");
+      nightMode.onclick = function() {
+        chooseThemeOnClick();
+      }
+    </script>
+  </div>
+</div>

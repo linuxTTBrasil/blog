@@ -1,0 +1,23 @@
+# Setup
+title:            [Linux TTB]
+tagline:          'Tech blog'
+description:      ''
+slogan:            'Unlocking DevOps Wisdom, One Tip at a Time'
+url:              'https://linuxttbrasil.github.io/blog'
+baseurl:          ''
+paginate:         5
+
+# About and contact
+author:
+  name:           'Thiago Baldino Moreira'
+  email:          'thiagobaldino5@gmail.com'
+  url:            https://github.com/JsThiago
+  github:         https://github.com/JsThiago
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+
+# Custom vars
+version:          1.0.0
