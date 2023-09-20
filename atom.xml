@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Linux TTB</title>
- <link href="https://linuxttbrasil.github.io/blog/atom.xml" rel="self"/>
- <link href="https://linuxttbrasil.github.io/blog/"/>
- <updated>2023-09-19T21:48:35-03:00</updated>
- <id>https://linuxttbrasil.github.io/blog</id>
+ <link href="https://linuxttbrasil.github.io/atom.xml" rel="self"/>
+ <link href="https://linuxttbrasil.github.io/"/>
+ <updated>2023-09-19T21:54:03-03:00</updated>
+ <id>https://linuxttbrasil.github.io</id>
  <author>
    <name>Thiago Baldino Moreira</name>
    <email>thiagobaldino5@gmail.com</email>
