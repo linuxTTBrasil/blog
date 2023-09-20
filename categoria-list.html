@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v14.0" nonce="VeSERG9M"></script>  
+  <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  
+  
+  <title>
+    
+      Categorias &middot; Linux TTB
+    
+  </title>
+
+  <link rel="stylesheet" href="https://linuxttbrasil.github.io/blog/assets/css/poole.css">
+  <link rel="stylesheet" href="https://linuxttbrasil.github.io/blog/assets/css/gist.css">
+  <link rel="stylesheet" href="https://linuxttbrasil.github.io/blog/assets/css/syntax.css">
+  <link rel="stylesheet" href="https://linuxttbrasil.github.io/blog/assets/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon-iphone-60x60.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/apple-touch-icon-ipad-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-iphone-retina-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/apple-touch-icon-ipad-retina-152x152.png">
+  <link rel="shortcut icon" href="https://linuxttbrasil.github.io/blog/assets/favicon.ico">
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://linuxttbrasil.github.io/blog/atom.xml">
+  <script src="https://linuxttbrasil.github.io/blog/assets/js/lib.js"></script>
+
+</head>
+
+
+  <body>
+
+    <script>
+  function searchHandler(e){
+    var search = document.getElementById("search-input").value;
+    var url = "https://linuxttbrasil.github.io/blog" + "/search?query=" + search;
+    console.info(url,"url")
+    window.location.href = url;
+  }
+</script>
+<div class="sidebar">
+  <div class="sidebar-sticky">
+    <div class="search">
+      <input type="text" class="form-control" id="search-input" placeholder="Nome do post">
+      <button onclick="searchHandler()" type="button" id="search-button" class="btn btn-light">buscar</button>
+    </div>
+    <div class="sidebar-about">
+        <a href="https://linuxttbrasil.github.io/blog">
+          <img src="/assets/images/LTT.png"/>
+        </a>
+
+        <span class="sidebar-slogan">Unlocking DevOps Wisdom, One Tip at a Time</span>
+    </div>
+
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://linuxttbrasil.github.io/blog">Home</a>
+
+      
+
+      
+      
+        
+          
+            <a class="sidebar-nav-item" href="https://linuxttbrasil.github.io/blog/about.html">Sobre</a>
+          
+        
+      
+        
+      
+        
+          
+            <a class="sidebar-nav-item active" href="https://linuxttbrasil.github.io/blog/categoria-list.html">Categorias</a>
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+      <!--     
+      <a class="sidebar-nav-item" onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.getElementsByClassName('post')[0].outerHTML)" download="page.html" href="#">Download</a>
+      -->
+      <a class="sidebar-nav-item" href="https://github.com/JsThiago">GitHub</a>
+    </nav>
+    <div class="night-mode-div">
+    <div>
+        <img id="night-mode" src="/assets/images/moon.svg"></img>
+    </div>
+        <b class="copyright">&copy; 2023. All rights reserved.</b>
+    </div>
+    <div class="version">
+            1.0.0
+    </div>
+    
+    <script>
+      function addNightModeUnderDevelopmentMessage(){
+          
+            let divUnderDevelopmentMessage = document.createElement("div")
+            divUnderDevelopmentMessage.id = "under-development-message"
+            divUnderDevelopmentMessage.innerHTML = "Dark mode under development"
+            divUnderDevelopmentMessage.style.position = "fixed"
+            divUnderDevelopmentMessage.style.top = "0"
+            divUnderDevelopmentMessage.style.right = "0"
+            divUnderDevelopmentMessage.style.color = "white"
+            divUnderDevelopmentMessage.style.padding = "10px"
+            divUnderDevelopmentMessage.style.backgroundColor = "#32325b"
+            divUnderDevelopmentMessage.style.borderRadius = "0 0 10px 10px"
+            divUnderDevelopmentMessage.style.opacity = "0.6"
+            document.body.appendChild(divUnderDevelopmentMessage)
+      }
+      function chooseThemeOnClick(){
+        let nightMode = document.getElementById("night-mode");
+        var theme = localStorage.getItem('theme');
+      
+        if(theme === null){
+          theme = 'night';
+          localStorage.setItem("theme","night");
+        }
+        var body = document.getElementsByTagName("body")[0];
+        var h1 = document.getElementsByTagName("h1")[0];
+        if (theme === "light") {
+            document.documentElement.style.setProperty("--title","rgba(255,255,255,0.9");
+            document.documentElement.style.setProperty("--content","rgba(255,255,255,0.75");
+            body.style.backgroundColor = "#202020"
+            nightMode.src = "/assets/images/sun.svg";
+            localStorage.setItem('theme', 'night');
+            addNightModeUnderDevelopmentMessage()
+
+          } else {
+            document.getElementById("under-development-message")?.remove()
+            document.documentElement.style.setProperty("--title","#303030")
+            document.documentElement.style.setProperty("--content","#404040");
+            body.style.backgroundColor = "aliceblue"
+            localStorage.setItem("theme", 'light');
+            nightMode.src = "/assets/images/moon.svg";
+          }
+      }
+      function chooseTheme(){
+        var body = document.getElementsByTagName("body")[0];
+        var h1 = document.getElementsByTagName("h1")[0];
+        let nightMode = document.getElementById("night-mode");
+        var theme = localStorage.getItem('theme');
+      
+        if(theme === null){
+          theme = 'night';
+          localStorage.setItem("theme","night");
+        }
+        if (theme === "night") {
+            document.documentElement.style.setProperty("--title","rgba(255,255,255,0.9");
+            document.documentElement.style.setProperty("--content","rgba(255,255,255,0.75");
+            body.style.backgroundColor = "#202020"
+            nightMode.src = "/assets/images/sun.svg";
+            localStorage.setItem('theme', 'night');
+            addNightModeUnderDevelopmentMessage()
+          } else {
+            document.documentElement.style.setProperty("--title","#303030")
+            document.documentElement.style.setProperty("--content","#404040");
+            body.style.backgroundColor = "aliceblue"
+
+            localStorage.setItem("theme", 'light');
+            nightMode.src = "/assets/images/moon.svg";
+          }
+      }
+      chooseTheme()
+            
+
+      var nightMode = document.getElementById("night-mode");
+      nightMode.onclick = function() {
+        chooseThemeOnClick();
+      }
+    </script>
+  </div>
+</div>
+
+
+    <div class="content container">
+
+        
+      <div class="page">
+
+  <h1 class="page-title">Categorias</h1>
+  <div id="wrapper">
+ <select id="select" class="form-select">
+  <option value="" selected="">Selecione uma categoria</option>
+  </select>
+    <div class="posts filter" id="main" />
+</div>
+<script id="selectOp">
+addCategoriesToSelectCategoriesElement("select")
+renderPostsByCategory("","main");
+    document.getElementById("select").addEventListener("change", function(){
+        let categoriaAtual = this.value;
+        document.getElementById("main").innerHTML = "";
+        renderPostsByCategory(categoriaAtual,"main");
+    })
+</script>
+
+
+</div>
+
+    </div>
+
+  </body>
+</html>
