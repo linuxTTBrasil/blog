@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://linuxttbrasil.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://linuxttbrasil.github.io/blog/" rel="alternate" type="text/html" /><updated>2023-10-03T17:35:09-03:00</updated><id>https://linuxttbrasil.github.io/blog/feed.xml</id><title type="html">[“Linux TTB”]</title><subtitle></subtitle><author><name>Thiago Baldino Moreira</name><email>thiagobaldino5@gmail.com</email></author><entry><title type="html">NSSM - Parte 1 - Instalação e primeiro serviço</title><link href="https://linuxttbrasil.github.io/blog/2023/09/02/NSSM-Parte1-instalac-a-o-e-primeiro-servic-o.html" rel="alternate" type="text/html" title="NSSM - Parte 1 - Instalação e primeiro serviço" /><published>2023-09-02T00:00:00-03:00</published><updated>2023-09-02T00:00:00-03:00</updated><id>https://linuxttbrasil.github.io/blog/2023/09/02/NSSM-Parte1-instala%C3%A7%C3%A3o-e-%20primeiro%20-servi%C3%A7o</id><content type="html" xml:base="https://linuxttbrasil.github.io/blog/2023/09/02/NSSM-Parte1-instalac-a-o-e-primeiro-servic-o.html">&lt;h2 id=&quot;introdução&quot;&gt;Introdução&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://linuxttbrasil.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://linuxttbrasil.github.io/blog/" rel="alternate" type="text/html" /><updated>2023-10-03T17:51:18-03:00</updated><id>https://linuxttbrasil.github.io/blog/feed.xml</id><title type="html">[“Linux TTB”]</title><subtitle></subtitle><author><name>Thiago Baldino Moreira</name><email>thiagobaldino5@gmail.com</email></author><entry><title type="html">NSSM - Parte 1 - Instalação e primeiro serviço</title><link href="https://linuxttbrasil.github.io/blog/2023/09/02/NSSM-Parte1-instalac-a-o-e-primeiro-servic-o.html" rel="alternate" type="text/html" title="NSSM - Parte 1 - Instalação e primeiro serviço" /><published>2023-09-02T00:00:00-03:00</published><updated>2023-09-02T00:00:00-03:00</updated><id>https://linuxttbrasil.github.io/blog/2023/09/02/NSSM-Parte1-instala%C3%A7%C3%A3o-e-%20primeiro%20-servi%C3%A7o</id><content type="html" xml:base="https://linuxttbrasil.github.io/blog/2023/09/02/NSSM-Parte1-instalac-a-o-e-primeiro-servic-o.html">&lt;h2 id=&quot;introdução&quot;&gt;Introdução&lt;/h2&gt;
 
 &lt;p&gt;Ao utilizar servidores, inevitavelmente você irá ter que lidar com serviços. Serviços são uma forma de executar um &lt;strong&gt;&lt;em&gt;script&lt;/em&gt;&lt;/strong&gt; ou aplicação em segundo plano (&lt;strong&gt;&lt;em&gt;background&lt;/em&gt;&lt;/strong&gt;). No universo de servidores Linux o &lt;strong&gt;&lt;em&gt;systemd&lt;/em&gt;&lt;/strong&gt; [1] é comumente usado para esse propósito. No Windows Server, as coisas são um pouco mais complicadas. O sistema Windows traz consigo uma aplicação chamada &lt;strong&gt;&lt;em&gt;sc.exe&lt;/em&gt;&lt;/strong&gt; ou &lt;strong&gt;&lt;em&gt;sc&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 
@@ -197,18 +197,11 @@
 &lt;h3 id=&quot;bibliografia&quot;&gt;Bibliografia&lt;/h3&gt;
 
 &lt;p&gt;1 - &lt;a href=&quot;https://wiki.archlinux.org/title/Systemd_(Portugu%C3%AAs)&quot;&gt;systemd (Português) - ArchWiki&lt;/a&gt;
-2 - &lt;a href=&quot;[Controlling a Service Using SC - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/services/controlling-a-service-using-sc)&quot;&gt;sc - documentation&lt;/a&gt;&lt;/p&gt;
+2 - &lt;a href=&quot;https://learn.microsoft.com/en-us/windows/win32/services/controlling-a-service-using-sc&quot;&gt;sc - documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;3 - &lt;a href=&quot;https://nssm.cc/&quot;&gt;nssm - site&lt;/a&gt;&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;4 - [Chocolatey Software&lt;/td&gt;
-      &lt;td&gt;Installing Chocolatey](https://chocolatey.org/install#individual)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;4 - &lt;a href=&quot;https://chocolatey.org/install#individual&quot;&gt;Chocolatey Software - Installing Chocolatey&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;5 - &lt;a href=&quot;https://en.wikipedia.org/wiki/PATH_(variable)&quot;&gt;PATH (variable) - Wikipedia&lt;/a&gt;&lt;/p&gt;
 
@@ -216,13 +209,6 @@
 
 &lt;p&gt;7 - &lt;a href=&quot;https://community.chocolatey.org/packages/nodejs.install&quot;&gt;choco nodejs.install&lt;/a&gt;&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;8 - [How To Create a Web Server in Node.js with the HTTP Module&lt;/td&gt;
-      &lt;td&gt;DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;8 - &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module&quot;&gt;How To Create a Web Server in Node.js with the HTTP Module - DigitalOcean&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;9 - &lt;a href=&quot;https://nssm.cc/commands&quot;&gt;NSSM - commands&lt;/a&gt;&lt;/p&gt;</content><author><name>Thiago Baldino Moreira</name><email>thiagobaldino5@gmail.com</email></author><summary type="html">Introdução</summary></entry></feed>
