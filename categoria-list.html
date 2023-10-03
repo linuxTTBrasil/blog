@@ -56,7 +56,7 @@
     </div>
     <div class="sidebar-about">
         <a href="https://linuxttbrasil.github.io/blog/">
-          <img src="assets/images/LTT.png"/>
+          <img src="/assets/images/LTT.png"/>
         </a>
 
         <span class="sidebar-slogan">Unlocking DevOps Wisdom, One Tip at a Time</span>
@@ -107,7 +107,7 @@
     </nav>
     <div class="night-mode-div">
     <div>
-        <img id="night-mode" src="assets/images/moon.svg"></img>
+        <img id="night-mode" src="/assets/images/moon.svg"></img>
     </div>
         <b class="copyright">&copy; 2023. All rights reserved.</b>
     </div>
@@ -145,7 +145,7 @@
             document.documentElement.style.setProperty("--title","rgba(255,255,255,0.9");
             document.documentElement.style.setProperty("--content","rgba(255,255,255,0.75");
             body.style.backgroundColor = "#202020"
-            nightMode.src = "assets/images/sun.svg";
+            nightMode.src = "/assets/images/sun.svg";
             localStorage.setItem('theme', 'night');
             addNightModeUnderDevelopmentMessage()
 
@@ -155,7 +155,7 @@
             document.documentElement.style.setProperty("--content","#404040");
             body.style.backgroundColor = "aliceblue"
             localStorage.setItem("theme", 'light');
-            nightMode.src = "assets/images/moon.svg";
+            nightMode.src = "/assets/images/moon.svg";
           }
       }
       function chooseTheme(){
@@ -172,7 +172,7 @@
             document.documentElement.style.setProperty("--title","rgba(255,255,255,0.9");
             document.documentElement.style.setProperty("--content","rgba(255,255,255,0.75");
             body.style.backgroundColor = "#202020"
-            nightMode.src = "assets/images/sun.svg";
+            nightMode.src = "/assets/images/sun.svg";
             localStorage.setItem('theme', 'night');
             addNightModeUnderDevelopmentMessage()
           } else {
@@ -181,7 +181,7 @@
             body.style.backgroundColor = "aliceblue"
 
             localStorage.setItem("theme", 'light');
-            nightMode.src = "assets/images/moon.svg";
+            nightMode.src = "/assets/images/moon.svg";
           }
       }
       chooseTheme()

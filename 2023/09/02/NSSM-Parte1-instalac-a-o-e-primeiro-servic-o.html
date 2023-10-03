@@ -56,7 +56,7 @@
     </div>
     <div class="sidebar-about">
         <a href="https://linuxttbrasil.github.io/blog/">
-          <img src="assets/images/LTT.png"/>
+          <img src="/assets/images/LTT.png"/>
         </a>
 
         <span class="sidebar-slogan">Unlocking DevOps Wisdom, One Tip at a Time</span>
@@ -107,7 +107,7 @@
     </nav>
     <div class="night-mode-div">
     <div>
-        <img id="night-mode" src="assets/images/moon.svg"></img>
+        <img id="night-mode" src="/assets/images/moon.svg"></img>
     </div>
         <b class="copyright">&copy; 2023. All rights reserved.</b>
     </div>
@@ -145,7 +145,7 @@
             document.documentElement.style.setProperty("--title","rgba(255,255,255,0.9");
             document.documentElement.style.setProperty("--content","rgba(255,255,255,0.75");
             body.style.backgroundColor = "#202020"
-            nightMode.src = "assets/images/sun.svg";
+            nightMode.src = "/assets/images/sun.svg";
             localStorage.setItem('theme', 'night');
             addNightModeUnderDevelopmentMessage()
 
@@ -155,7 +155,7 @@
             document.documentElement.style.setProperty("--content","#404040");
             body.style.backgroundColor = "aliceblue"
             localStorage.setItem("theme", 'light');
-            nightMode.src = "assets/images/moon.svg";
+            nightMode.src = "/assets/images/moon.svg";
           }
       }
       function chooseTheme(){
@@ -172,7 +172,7 @@
             document.documentElement.style.setProperty("--title","rgba(255,255,255,0.9");
             document.documentElement.style.setProperty("--content","rgba(255,255,255,0.75");
             body.style.backgroundColor = "#202020"
-            nightMode.src = "assets/images/sun.svg";
+            nightMode.src = "/assets/images/sun.svg";
             localStorage.setItem('theme', 'night');
             addNightModeUnderDevelopmentMessage()
           } else {
@@ -181,7 +181,7 @@
             body.style.backgroundColor = "aliceblue"
 
             localStorage.setItem("theme", 'light');
-            nightMode.src = "assets/images/moon.svg";
+            nightMode.src = "/assets/images/moon.svg";
           }
       }
       chooseTheme()
@@ -266,7 +266,7 @@
 
 <p>A utilização, para a criação de um novo serviço, do <strong><em>NSSM</em></strong> pode ser através de uma interface gráfica ou através de comandos no terminal. Ambas serão demonstradas mais a frente. Porém, para iniciar a interface gráfica é necessária a execução do comando no terminal.</p>
 
-<p><img src="/Volumes/macExternal/Documents/blog/assets/images/posts/2023-09-21-criando_servicos_com_nssm/nssm_gui.png" alt="nssm_gui.png" /></p>
+<p><img src="/assets/images/posts/2023-09-21-criando_servicos_com_nssm/nssm_gui.png" alt="nssm_gui.png" /></p>
 
 <p><em>Interface gráfica</em></p>
 
@@ -359,7 +359,7 @@
   </li>
 </ul>
 
-<p><img src="/Volumes/macExternal/Documents/blog/assets/images/posts/2023-09-21-criando_servicos_com_nssm/install_gui.png" alt="install_gui.png" /></p>
+<p><img src="/assets/images/posts/2023-09-21-criando_servicos_com_nssm/install_gui.png" alt="install_gui.png" /></p>
 
 <p>Para criar o serviço para o servidor web acima deve-se colocar o valor “<strong><em>node</em></strong>” no campo <strong><em>path</em></strong>, o valor do caminho para o arquivo index.js no campo <strong><em>arguments</em></strong>. O campo startup directory pode ser deixado em branco.</p>
 
@@ -395,11 +395,11 @@
 
 <p>O comando acima irá iniciar o serviço. Para conferir se o serviço está sendo executado pode-se abrir um navegador de internet e acessar o endereço <strong>http://localhost:8000</strong>.</p>
 
-<p><img src="/Volumes/macExternal/Documents/blog/assets/images/posts/2023-09-21-criando_servicos_com_nssm/api_response.png" alt="api_response.png" /></p>
+<p><img src="/assets/images/posts/2023-09-21-criando_servicos_com_nssm/api_response.png" alt="api_response.png" /></p>
 
 <p>O serviço também estará presente nas configurações de serviços do windows que pode ser acessada buscando “<strong><em>services</em></strong>” na busca de aplicativos do sistema.</p>
 
-<p><img src="/Volumes/macExternal/Documents/blog/assets/images/posts/2023-09-21-criando_servicos_com_nssm/services.png" alt="services.png" /></p>
+<p><img src="/assets/images/posts/2023-09-21-criando_servicos_com_nssm/services.png" alt="services.png" /></p>
 
 <h3 id="bibliografia">Bibliografia</h3>
 
