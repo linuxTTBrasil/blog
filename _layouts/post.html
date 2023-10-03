@@ -16,15 +16,13 @@ layout: default
 {% assign raw_domain = site.url | split: "//" %}
 {% assign domain_parts = raw_domain | last | split: "/" %}
 {% assign clean_domain = domain_parts[0] %}
-  <div>
-      <a  href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}">
-          <img class="facebook-share-button" src="/assets/images/facebook.svg"/>
+      <a class="facebook-share-button"  href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}">
+          <img class="facebook-share-button" src="{{'/assets/images/facebook.svg' | absolute_url }}"/>
       </a>
-  </div>
   <a  href="https://twitter.com/share?url={{site.url}}{{page.url}}" class="twitter-share-button" data-show-count="false">
-      <img src="/assets/images/Twitter.svg" />
+      <img class="twitter-share-button" src="{{'/assets/images/Twitter.svg' | absolute_url}}" />
   </a>
-  <a href="https://linkedin.com/shareArticle?url={{clean_domain}}{{page.url}}&title={{page.title}}"><img class="linkedin-share-button" src="/assets/images/linkedin.svg"> </a>
+  <a href="https://linkedin.com/shareArticle?url={{clean_domain}}{{page.url}}&title={{page.title}}"><img class="linkedin-share-button" src="{{ '/assets/images/linkedin.svg' | absolute_url }}"> </a>
 
 </div>
 {% if site.related_posts.size >= 1 %}

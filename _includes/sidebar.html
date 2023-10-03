@@ -13,7 +13,7 @@
       <button onclick="searchHandler()" type="button" id="search-button" class="btn btn-light">buscar</button>
     </div>
     <div class="sidebar-about">
-        <a href="{{ site.url }}">
+        <a href="{{ '/' | absolute_url }}">
           <img src="/assets/images/LTT.png"/>
         </a>
 
@@ -22,7 +22,7 @@
 
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="{{ site.url }}">Home</a>
+      <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="{{'/' | absolute_url}}">Home</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with

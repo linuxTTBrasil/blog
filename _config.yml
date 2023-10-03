@@ -3,8 +3,8 @@ title:            [Linux TTB]
 tagline:          'Tech blog'
 description:      ''
 slogan:            'Unlocking DevOps Wisdom, One Tip at a Time'
-url:              'https://linuxttbrasil.github.io/blog'
-baseurl:          ''
+url:              'https://linuxttbrasil.github.io'
+baseurl:          '/blog'
 paginate:         5
 
 # About and contact
