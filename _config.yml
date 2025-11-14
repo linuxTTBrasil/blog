@@ -5,7 +5,6 @@ description:      ''
 slogan:            'Unlocking DevOps Wisdom, One Tip at a Time'
 url:              'https://linuxttbrasil.github.io'
 baseurl:          '/blog'
-paginate:         5
 
 # About and contact
 author:
@@ -16,8 +15,16 @@ author:
 
 # Gems
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-gist
+
+# Pagination
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  sort_field: 'date'
+  sort_reverse: true
 
 # Custom vars
 version:          1.0.0
